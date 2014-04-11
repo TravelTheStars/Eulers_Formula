@@ -3,6 +3,14 @@
 {% block title %}5C Course Reviews{% endblock %}
 
 {% block content %}
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_PI/all.js#xfbml=1&appId=578043695642334";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div class="jumbotron">
   <h2>Welcome to 5C Course Reviews!</h2>
   <p>You can read tons of reviews written about any course at the 5Cs. Search courses by major or school, and write your own reviews, too!</p>
@@ -26,6 +34,7 @@
   </select>
   <button type="submit"  class="btn btn-warning btn-lg">Search!</button>
 </form>
+<div class="fb-like" data-href="https://http://evening-peak-2051.herokuapp.com/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 {% endblock %}
 
 {% block scripts %}
